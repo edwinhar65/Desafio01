@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptar/Desencriptar</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <img src="imagenes/EncriptionBanner.jpg">
+                <h1>Texto a encriptar/desencriptar</h1>
+            </div>
+            <h2>1º Challenge ONE | Alura Latam</h2>
+        </header>
+
+        <main>
+            
+               <br>
+                <div class="contenedor">
+                    <section class="left-section">
+                        <textarea id="texto" onfocus="limpiarTextarea()" rows="10" cols="50" color:lightblue ;type="text"></textarea>
+                        <br>
+                        <button type="button" class="btnEncriptar" onclick="Encryptar()">Encriptar</button>
+                        <button type="button" class="btnDesencriptar" onclick="Desencryptar()">Desencriptar</button>
+                    </section>
+
+                    <section class="right-section" style="position: relative;">
+                        <div class="divTextDes" style="position: relative;">
+                            <img src="./imagenes/buscar.png">
+                            <!-- <h2>Ningún mensaje fue encontrado</h2> -->
+                            <textarea class="inputDesencryptado" id="boxDesencryptado" type="text" readonly="readonly" style="position: absolute; top: 20px; left: 20px;">Texto no editable</textarea>
+                            <br>
+                        </div>
+                        <div class="divBtn"  style="position: absolute; bottom: 10px;">
+                            <button class="btnCopiar" onclick="copiar()">Copiar</button>
+                        </div> 
+                    </section>
+                   
+                  </div>
+            
+        </main>
+        
+        <footer>
+           <p class="copyright">Desarrollador: Edwin Alfaro Romaña- 2023</p>
+        </footer>
+        
+    </body>
+
+    
+    <script src="script.js" ></script>
+
+</html>

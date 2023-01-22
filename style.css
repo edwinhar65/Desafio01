@@ -1,0 +1,116 @@
+
+h1{
+  font-size: x-large;
+  font-weight: bold;
+}
+
+/* Estilo para el textarea */
+
+
+form{
+  background: lightblue;
+}  
+  .contenedor {
+    background: lightblue;
+    display: flex;
+    width: 95%;
+    align-items:flex-start;
+    flex-wrap: nowrap;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .left-section{
+    float: left;
+    width: 47%;
+    height: 400px;
+    border: none;
+    /*border: 1px solid black;*/
+  }
+
+  .left-section textarea {
+    width: 95%;
+    height: 50%;
+    margin: auto;
+    background: lightblue;
+   
+  }
+
+  .right-section{
+    float: right;
+    width: 47%;
+    height: 400px;
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    display:block;
+    background-color: white;
+    /*border: none;*/
+    border: 1px solid black;
+    border-radius: 20px;
+    align-items: center;
+  }
+
+  .inputDesencryptado {
+    margin: auto;
+    width: 95%;
+    /*height: 80%;*/
+    border:5px;
+    /*display: flex;
+    resize: none;*/
+    pointer-events: none;
+    background: transparent;
+  }
+
+  /* Estilo para los botones */
+  .btnEncriptar{
+    color: aliceblue;
+    width: 120px;
+    height: 30px;
+    background-color: rgb(38, 144, 236);;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 20px;
+    
+  }
+
+  .btnDesencriptar{
+    width: 120px;
+    height: 30px;
+    background-color: lightslategray;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    
+  }
+
+  .btnCopiar{
+    width: 120px;
+    height: 30px;
+    background-color: lightslategray;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 0 0 20px;
+  }
+
+  /* Estilo para el efecto de cambio de color al pasar el mouse sobre los botones */
+  .btnEncriptar:hover {
+    background-color: lightskyblue;
+  }
+
+  .btnDesencriptar:hover {
+    background-color: yellowgreen;
+  }
+
+  .btnCopiar:hover {
+    background-color: yellowgreen;
+  }
+
+  @media (max-width:768px){
+    .contenedor {
+      flex-direction: column;
+    }
+    .right-section, left-section {
+      width: 90%;
+      float: none;
+    }
+  }
